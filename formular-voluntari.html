@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+<style>
+body{
+	background-color: #c5d9fa;
+}
+
+.register{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.register h1{
+	font-size: 150%;
+	padding-bottom: 12px;
+	text-shadow: 2px 2px 5px #4d5e6e;
+	font-family: "Georgia";
+}
+
+.register input[type=text], input[type=password], input[type=email], input[type=date]{
+	background-color: #fffff;
+	border: black;
+	border-radius: 20px;
+	padding: 10px 40px;
+	text-decoration: none;
+	margin: 1px 1px;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.register input[type=submit]{
+	background-color: #edf5fc;
+	border: none;
+	border-radius: 10px;
+	padding: 10 px 20px;
+	margin: 4px 2px;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Calibri;
+	height: 30px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.register input[type=submit]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.register input[type=text]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.register input[type=password]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.register input[type=email]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.register input[type=date]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+<div class="register">
+    <h1>Formular pentru viitorii voluntari</h1>
+    <form action="register-voluntari.php" method="post" autocomplete="off">
+        <br><input type="text" name="nume" placeholder="Nume" id="nume" required></br>
+		<br><input type="email" name="email" placeholder="Email" id="email" required></br>
+		<br><input type="telefon" name="telefon" placeholder="Telefon" id="telefon" required></br>
+		<br><input type="adresa" name="adresa" placeholder="Adresa" id="adresa" required></br>
+		<br><input type="text" name="oras" placeholder="Oras" id="oras" required></br>
+		<br><input type="text" name="tara" placeholder="Tara" id="tara" required></br>
+		<p>Care este motivul pentru care dorești să fii voluntar al acestei organizații?</p>
+		<textarea name="mesaj" placeholder="Mesaj" id="mesaj" required class="mesaj" rows="10" cols="30" value=""></textarea></br>
+        <input type="submit" value="Înregistrare">
+    </form>
+</div>
+</body>
+</html>
